@@ -1,0 +1,1 @@
+let tile = document.querySelector('.title');

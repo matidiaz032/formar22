@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <style>
+        .prueba::before {
+            content: "Contenido de prueba";
+            background-color: aqua;
+        }
+        h2::after{
+            content: "de 16 a 18hs";
+        }
+        input {
+            background-color: red;
+        }
+        input[type="text"]{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="user" id="nombre">
+        <label for="dni">DNI: </label>
+        <input type="number" name="dni" id="dni">
+        <label for="pass">Contraseña: </label>
+        <input type="password" name="pass" id="pass">
+        <label for="date">Fecha de nacimiento: </label>
+        <input type="date" name="fecha-nacimiento" id="date">
+        <label for="color">Color: </label>
+        <input type="color" name="color" id="color">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email">
+        <label for="select">Select</label>
+        <select name="sexo" id="">
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+            <option value="NB">No Binario</option>
+        </select>
+        <label>Choose a browser from this list:
+            <input list="browsers" name="myBrowser" /></label>
+            <datalist id="browsers">
+              <option value="Chrome">
+              <option value="Firefox">
+              <option value="Internet Explorer">
+              <option value="Opera">
+              <option value="Safari">
+              <option value="Microsoft Edge">
+            </datalist> 
+            <label for="message"></label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Escriba aquí su mensaje"></textarea>
+            <input type="file" multiple accept="image/png, image/jpg">
+            <h3>Mis hobbies</h3>          
+            <label for="programar"><input type="checkbox" name="hobbies" id="programar" value="programar" checked>Programar</label>
+            <label for="dibujar"><input type="checkbox" name="hobbies" id="dibujar" value="dibujar">Dibujar</label>
+            <label for="jugar"><input type="checkbox" name="hobbies" id="jugar" value="jugar">Jugar</label>
+            <h3>Formas de pago</h3>
+            <label for="debito"><input type="radio" name="pay" id="debito" value="debito" checked>Debito</label>
+            <label for="credito"><input type="radio" name="pay" id="credito" value="credito">Credito</label>
+            <label for="efectivo"><input type="radio" name="pay" id="efectivo" value="efectivo">Efectivo</label>
+            <hr>
+            <div class="prueba"></div>
+            <h2>Comisión 12</h2>
+            <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
